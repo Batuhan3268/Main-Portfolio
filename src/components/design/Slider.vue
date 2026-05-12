@@ -57,7 +57,8 @@
       >
         <img
           :class="{ hidden: index !== 0 }"
-          class="relative z-10 size-full rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale lg:h-[85svh]"
+          class="relative z-10 size-full rounded-lg object-cover mix-blend-screen brightness-100 grayscale lg:h-[100svh]"
+          style="object-position: center 25%; transform: scale(0.75); transform-origin: center; margin-top: -80px;"
           :src="people[0].profile"
           alt=""
         />
@@ -87,7 +88,8 @@
             <div class="col-span-3">
               <div class="columns-gap flex w-full flex-col gap-y-4">
                 <img
-                  class="aspect-square size-full rounded-md object-cover object-center mix-blend-screen brightness-90 grayscale"
+                  class="aspect-square size-full rounded-md object-cover mix-blend-screen brightness-90 grayscale"
+                  :style="i === 0 ? 'object-position: center 10%; transform: scale(0.75); transform-origin: center;' : 'object-position: center;'"
                   :src="p.profile"
                   alt=""
                 />
@@ -126,7 +128,8 @@
 </template>
 
 <script setup lang="ts">
-  import { esmail, mohammad } from '@/assets/images';
+  import { esmail } from '@/assets/images';
+  import baranImage from '@/assets/images/baran.jpg';
   import { Button } from '../common';
   import { computed, onMounted, ref } from 'vue';
   import { useWindowSize } from '@vueuse/core';
@@ -261,11 +264,11 @@
   const people = [
     {
       quote:
-        'Collaborating with Hetari on multiple projects has been a true pleasure. His exceptional skills, attention to detail, and commitment to quality consistently made him an invaluable asset to the team.',
-      author: 'Mohammad AL-Sulami',
+        'Collaborating with Batuhan on multiple projects has been a true pleasure. His exceptional skills, attention to detail, and commitment to quality consistently made him an invaluable asset to the team.',
+      author: 'Baran Atmaca',
       position: 'Full Stack Developer',
       tags: ['Web Development', 'Animation', 'UI/UX'],
-      profile: mohammad,
+      profile: baranImage,
     },
     {
       quote:

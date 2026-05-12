@@ -57,27 +57,17 @@
         >
           <a class="group" target="_blank" :href="work.url">
             <div
-              class="flex-center relative aspect-square overflow-clip rounded-lg"
+              class="flex-center relative overflow-clip rounded-lg bg-black h-[100vh] w-full"
             >
-              <img
-                alt="work-background"
-                loading="lazy"
-                class="absolute size-full object-cover select-none"
-                :src="work.imageBg"
-              />
-              <div
-                class="flex-center z-10 aspect-4/3 size-full overflow-clip rounded-lg object-cover"
-              >
-                <!-- autoplay="false" -->
                 <video
                   ref="videoRefs"
                   :src="work.videoSrc"
                   muted
-                  :autoplay="false"
-                  type="video/webm"
-                  class="size-[80%] rounded-md object-contain blur transition-all duration-500 ease-in-out"
+                  loop
+                  playsinline
+                  type="video/mp4"
+                  class="w-full h-full rounded-lg object-cover transition-all duration-500 ease-in-out"
                 ></video>
-              </div>
             </div>
             <div>
               <p class="heading-6 font-title! mt-[2%] mb-[1%] leading-none">
@@ -144,21 +134,21 @@
   const selectedWorksProps = [
     {
       name: 'Madar',
-      category: 'Frontend',
-      tags: ['Vue.js', 'Tailwind', 'Gsap'],
+      category: 'Frontend & Backend',
+      tags: ['Vue.js', 'Tailwind', 'Laravel'],
       videoSrc: work5,
       imageBg: workBg5,
-      url: 'https://madar.services/',
-      year: '2025',
+      url: 'https://github.com/Hetari/madar',
+      year: '2024',
     },
     {
       name: 'Iphone 15 Clone',
       category: 'Frontend & Animation & 3D',
-      tags: ['Animation', '3D'],
+      tags: ['HTML', 'CSS', 'PHP'],
       videoSrc: work2,
       imageBg: workBg2,
       url: 'https://github.com/Hetari/iphone15-pro-clone',
-      year: '2024',
+      year: '2025',
     },
     {
       name: 'Axon',

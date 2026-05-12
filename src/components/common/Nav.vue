@@ -54,8 +54,8 @@
           <Link
             class="font-medium tracking-wider"
             tag="p"
-            label="hetari4all@gmail.com"
-            url="mailto:hetari4all@gmail.com"
+            label="247582@student.scalda.nl"
+            url="mailto:247582@student.scalda.nl"
           />
           <div class="mt-6 flex flex-wrap justify-start gap-1">
             <Button
@@ -87,7 +87,8 @@
             id="name"
             class="font-fancy flex items-start text-xl font-extrabold uppercase md:text-3xl"
           >
-            hetari
+            Portfolio 2026
+          
             <span
               class="font-fancy inline! origin-center! text-xl transition-transform duration-500 ease-in-out group-hover:rotate-[360deg]"
               >&copy;</span

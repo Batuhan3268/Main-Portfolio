@@ -35,7 +35,7 @@
             :data-cal-config="dataCalConfig"
             label="Get in touch"
           /> -->
-          <Button label="Get in touch" url="https://wa.me/967775367671" />
+          <Button label="Get in touch" url="https://wa.me/31617611927" />
         </div>
       </div>
       <div
@@ -59,7 +59,7 @@
               Working Globally
             </p>
             <p class="flex size-full items-center justify-start pr-2 pl-1">
-              Available Sep '24
+              Available '24/7
             </p>
           </div>
         </div>
@@ -68,9 +68,9 @@
           <p class="w-full font-bold uppercase">For further inquiries</p>
           <Link
             class="text-flax-smoke-300 h-6 text-right font-medium tracking-wider lowercase"
-            label="hetari4all@gmail"
+            label="247582@student.scalda.nl"
             :icon="true"
-            url="mailto:hetari4all@gmail"
+            url="mailto:247582@student.scalda.nl"
           />
         </div>
       </div>

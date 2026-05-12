@@ -5,8 +5,8 @@ import { robots } from 'vite-plugin-robots';
 import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/portfolio/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/portfolio/' : '/',
   build: {
     sourcemap: true,
     // terserOptions:
@@ -29,14 +29,16 @@ export default defineConfig({
     },
   },
   server: {
-    // watch: {
-    //   usePolling: true,
-    //   interval: 1000,
-    //   ignored: ['!**/src/**/*.{js,ts,jsx,tsx}'],
-    // },
+    hmr: {
+      overlay: true,
+    },
+    watch: {
+      usePolling: true,
+      interval: 1000,
+    },
   },
   optimizeDeps: {
     exclude: ['@tailwindcss/vite'],
     force: true,
   },
-});
+}));

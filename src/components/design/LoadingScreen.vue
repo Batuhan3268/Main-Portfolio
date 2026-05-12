@@ -22,7 +22,7 @@
           <span
             class="loading-text inline-block translate-y-full will-change-auto"
           >
-            Hetari
+            Batuhan
           </span>
         </h3>
 
@@ -38,7 +38,7 @@
           <span
             class="loading-text absolute bottom-10 left-5 inline-block font-mono sm:left-14"
           >
-            Version 1.4v
+            Welcome
           </span>
 
           <span

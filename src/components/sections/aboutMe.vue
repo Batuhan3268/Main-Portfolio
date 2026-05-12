@@ -26,7 +26,7 @@
       <h3
         id="little-bit-about-me"
         v-html="aboutMe"
-        class="heading-1-alt lg:heading-1 section-heading col-span-full leading-none font-extrabold uppercase md:col-span-8 md:col-start-6"
+        class="heading-1-alt lg:heading-1 section-heading col-span-full leading-none font-extrabold uppercase md:col-span-11 md:col-start-6"
       ></h3>
     </div>
 
@@ -35,9 +35,9 @@
         class="pointer-events-none col-span-full content-end rounded-lg select-none md:col-span-4"
       >
         <img
-          :src="profile2"
+          :src="aboutMePhoto"
           class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
-          alt="Headshot of Ebraheem facing a camera"
+          alt="Laptop on a cafe table"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
@@ -59,9 +59,7 @@
             Creating great web experiences is my primary focus. I ensure each
             project leaves users with a feel-good sensation through meticulous
             attention to detail and user-centric design principles. <br /><br />
-            When I'm not immersed in web development and design, you can find me
-            sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
+            I believe the web should feel effortless, intuitive, and even a little delightful. Creating great web experiences is my primary focus, and I strive to craft each project so that users leave with a positive impression. By combining meticulous attention to detail with user-centric design principles, I transform ideas into interfaces that not only function flawlessly but also resonate emotionally.
           </p>
         </div>
       </div>
@@ -75,7 +73,7 @@
     xToZero,
     animateAboutMeSectionLeave,
   } from '@/animations';
-  import { profile2 } from '@/assets/images';
+  import { aboutMePhoto } from '@/assets/images';
   import { textSplitterIntoChar } from '@/functions';
   import { onBeforeMount, onMounted, ref } from 'vue';
 
@@ -88,7 +86,7 @@
 
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
+      'Programmer, Developer, Web-animator',
       true,
       true,
     );

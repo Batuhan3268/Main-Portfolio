@@ -11,7 +11,7 @@
         class="heading-1 max-sm:heading-2 text-flax-smoke-950 col-span-full leading-none font-bold uppercase will-change-auto"
       >
         Don't take my <br />
-        word for it /
+        word for it 
       </h3>
       <div
         class="text-flax-smoke-800 col-span-full mt-[5%] flex justify-end gap-10 sm:gap-20 lg:col-span-10"

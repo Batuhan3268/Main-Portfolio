@@ -37,31 +37,27 @@ const navbarLinks = [
 
 const socialLinks = [
   {
-    label: 'X',
-    url: 'https://x.com/hetaridev',
-  },
-  {
-    label: 'Telegram',
-    url: 'https://t.me/e_1_e',
-  },
-  {
     label: 'GitHub',
-    url: 'https://github.com/hetari',
+    url: 'https://github.com/Batuhan3268?tab=repositories',
   },
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    url: 'https://www.linkedin.com/in/batuhan-gokmen-19a9a1398',
   },
 ];
 
-const resourceLinks = [
+const contactLinks = [
   {
-    label: 'Pillarstack',
-    url: 'https://www.pillarstack.com',
+    label: '+31 6 1761 1927',
+    url: 'tel:+31617611927',
   },
   {
-    label: 'Figma Template',
-    url: 'https://www.figma.com/community/file/1328038510191576951/project-starter-template',
+    label: 'Scalda Terneuzen',
+    url: 'https://maps.google.com/?q=Scalda+Terneuzen',
+  },
+  {
+    label: '247582@student.scalda.nl',
+    url: 'mailto:247582@student.scalda.nl',
   },
 ];
 
@@ -79,7 +75,7 @@ const dataCalConfig =
 
 export {
   socialLinks,
-  resourceLinks,
+  contactLinks,
   heroText,
   locationPlace,
   locationCountry,

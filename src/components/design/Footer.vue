@@ -15,9 +15,9 @@
           {{ section.title }}
         </p>
         <div class="mt-2 space-y-1">
-          <p v-for="link in section.links" :key="link.label" class="heading-6">
+          <p v-for="link in section.links" :key="link.label" class="heading-6 overflow-hidden">
             <Link
-              class="h-[3ch]! font-medium tracking-wider lowercase"
+              class="font-medium tracking-wider lowercase"
               :label="link.label"
               :url="link.url"
             />
@@ -29,7 +29,7 @@
     <div class="grid w-full grid-cols-12">
       <div class="col-span-7 place-content-center md:col-span-6">
         <h6 class="heading-4 sm:heading-2 leading-none font-bold">
-          © {{ new Date().getFullYear() }} Hetari <br />
+          © {{ new Date().getFullYear() }} Batuhan<br />
           All rights reserved.
         </h6>
       </div>
@@ -37,9 +37,8 @@
       <div
         class="col-span-5 place-content-center max-sm:place-content-end md:col-span-3"
       >
-        <p class="heading-6 font-bold uppercase">Hetari's Local time</p>
-        <p class="heading-6">{{ myLocalTime }}</p>
-        <p class="heading-6 font-bold uppercase">Your Local time</p>
+        
+        <p class="heading-6 font-bold uppercase">My Local time</p>
         <p class="heading-6">{{ userLocalTime }}</p>
       </div>
 
@@ -85,7 +84,7 @@
 </template>
 
 <script setup lang="ts">
-  import { navbarLinks, resourceLinks, socialLinks } from '@/data';
+  import { navbarLinks, contactLinks, socialLinks } from '@/data';
   import { Link } from '..';
   import { onMounted, ref } from 'vue';
   import { lenis } from '@/main';
@@ -96,7 +95,7 @@
   const footerSections = [
     { title: 'Menu', links: navbarLinks },
     { title: 'Socials', links: socialLinks },
-    { title: 'Resources', links: resourceLinks },
+    { title: 'Contact', links: contactLinks },
   ];
 
   const myLocalTime = ref('');

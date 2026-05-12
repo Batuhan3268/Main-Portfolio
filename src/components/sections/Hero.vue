@@ -7,8 +7,8 @@
       <div class="relative flex w-full flex-col items-center">
         <div class="w-full items-end overflow-clip">
           <div class="flex w-full items-start gap-10">
-            <MyName />
-            <Star id="star" class="hide-on-mobile translate-x-full" />
+            <MyName class="flex-1" />
+            <Star id="star" class="hide-on-mobile translate-x-full flex-shrink-0" />
           </div>
         </div>
 
@@ -56,7 +56,7 @@
                   class="contact"
                   label="Get in touch"
                 /> -->
-                <Button label="Get in touch" url="https://wa.me/967775367671" />
+                <Button label="Get in touch" url="https://wa.me/31617611927" />
               </div>
             </div>
           </div>
@@ -102,20 +102,17 @@
 </template>
 
 <script setup lang="ts">
-  import { onBeforeMount, ref } from 'vue';
+  import { computed, ref } from 'vue';
   import { MyName, Star } from '../design';
   import { Button } from '@/components/common';
   import { profile } from '@/assets/images';
   import { getAvailableForWorkDate, textSplitterIntoChar } from '@/functions';
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
-  const whoAmI = ref(
+  const whoAmIText = ref(
     'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
   );
-  const AvailableForWorkDate = ref('');
 
-  onBeforeMount(() => {
-    whoAmI.value = textSplitterIntoChar(whoAmI.value);
-    AvailableForWorkDate.value = getAvailableForWorkDate();
-  });
+  const whoAmI = computed(() => textSplitterIntoChar(whoAmIText.value));
+  const AvailableForWorkDate = computed(() => getAvailableForWorkDate());
 </script>
