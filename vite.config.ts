@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/portfolio/' : '/',
+  base: command === 'build' ? '/Main-Portfolio/' : '/',
   build: {
     sourcemap: true,
     // terserOptions:
@@ -17,8 +17,8 @@ export default defineConfig(({ command }) => ({
     vue(),
     robots(),
     sitemap({
-      hostname: 'https://hetari.github.io/',
-      basePath: 'portfolio',
+      hostname: 'https://batuhan3268.github.io/',
+      basePath: 'Main-Portfolio',
       changefreq: 'hourly', // default: 'daily'
       priority: 1,
     }),

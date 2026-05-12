@@ -9,6 +9,6 @@ jobs:
     - id: Build-Vue
       uses: xRealNeon/VuePagesAction@1.0.1
       with:
-        username: 'Hetari'
-        reponame: 'portfolio'
+        username: 'batuhan3268'
+        reponame: 'Main-Portfolio'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
